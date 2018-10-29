@@ -22,6 +22,7 @@ class Author
   def add_post_by_title(post_title)
     x = Post.new 
     x.author = self
+    x.title = post_title 
     @posts << x
     @@posts << x
   end 
